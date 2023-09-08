@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\Cardiff_Mini_Monopoly\\Cardiff_Mini_Monopoly.csproj",
-      "projectName": "Cardiff_Mini_Monopoly",
-      "projectPath": "D:\\Desktop\\Cardiff_Mini_Monopoly\\Cardiff_Mini_Monopoly.csproj",
+      "projectUniqueName": "D:\\Desktop\\Coding\\Projects\\Cardiff Mini Monopoly\\Map\\Map.csproj",
+      "projectName": "Map",
+      "projectPath": "D:\\Desktop\\Coding\\Projects\\Cardiff Mini Monopoly\\Map\\Map.csproj",
       "packagesPath": "C:\\Users\\joshg\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\Cardiff_Mini_Monopoly\\obj\\",
+      "outputPath": "D:\\Desktop\\Coding\\Projects\\Cardiff Mini Monopoly\\Map\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joshg\\AppData\\Roaming\\NuGet\\NuGet.Config"

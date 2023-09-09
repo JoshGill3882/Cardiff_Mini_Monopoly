@@ -81,6 +81,10 @@ public class Map {
     private Player[] GeneratePlayers() {
         Console.WriteLine("Enter number of players:");
         int requiredPlayerNum = Convert.ToInt32(Console.ReadLine());
+        while (requiredPlayerNum > 10 ^ requiredPlayerNum < 2) {
+            Console.WriteLine("Error, number of players must be between 2 and 10:");
+            requiredPlayerNum = Convert.ToInt32(Console.ReadLine());
+        }
         Player[] players = new Player[requiredPlayerNum];
         Console.WriteLine();
 

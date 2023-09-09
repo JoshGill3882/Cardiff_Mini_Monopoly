@@ -1,12 +1,15 @@
 ﻿using Map.Spaces;
+using Players;
 
 namespace Map;
 
 public class Map {
     public Space[] Spaces;
+    public Player[] Players;
 
     public Map() {
         Spaces = GenerateMap();
+        Players = GeneratePlayers();
     }
 
     private Space[] GenerateMap() {
@@ -73,5 +76,28 @@ public class Map {
         }
 
         return spaces;
+    }
+
+    private Player[] GeneratePlayers() {
+        Console.WriteLine("Enter number of players:");
+        int requiredPlayerNum = Convert.ToInt32(Console.ReadLine());
+        Player[] players = new Player[requiredPlayerNum];
+        Console.WriteLine();
+
+        for (int x = 0; x < players.Length; x++) {
+            Console.WriteLine("Player " + (x + 1) + " name:");
+            var playerName = Console.ReadLine();
+            while (string.IsNullOrEmpty(playerName)) {
+                Console.WriteLine("Error, entered value was empty. Re-enter name:");
+                playerName = Console.ReadLine();
+            }
+            players[x] = new Player(
+                playerName,
+                x
+            );
+            Console.WriteLine();
+        }
+
+        return players;
     }
 }

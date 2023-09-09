@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Players/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Players.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Players.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Players/1.0.0": {
+      "type": "project",
+      "path": "../Players/Players.csproj",
+      "msbuildProject": "../Players/Players.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Players >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\joshg\\.nuget\\packages\\": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Desktop\\Coding\\Projects\\Cardiff Mini Monopoly\\Players\\Players.csproj": {
+              "projectPath": "D:\\Desktop\\Coding\\Projects\\Cardiff Mini Monopoly\\Players\\Players.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
